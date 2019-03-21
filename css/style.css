@@ -93,7 +93,8 @@ a :hover{
     margin-top: 0px;
     
 }
-.video{
+.carousel-item{
+    height: 600px;
     
 }
 
