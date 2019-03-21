@@ -40,8 +40,8 @@
             Dropdown link
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Album de photo</a>
-            <a class="dropdown-item" href="#">liste des projet</a>
+            <a class="dropdown-item" href="Tank13.html">Tank n°13</a>
+            <a class="dropdown-item" href="P_2emesilo.html">Silo n°2</a>
             <a class="dropdown-item" href="#">Documentation</a>
           </div>
         </li>
@@ -50,7 +50,8 @@
   </nav>
   <div>
       <div align="center" >
-      <img src="logo.jpg" id="log"  width="300px" border-radius: 50%;/><br>
+      <img src="logo.jpg" id="log"  width="300px" ;/><br>
+      <button onclick='son.paused ? son.play() : son.pause()' class="button">Play/Pause son</button>
       </div>
         <div class="social"  >
         <i class="fab fa-linkedin-in"></i>
@@ -59,38 +60,62 @@
           <i class="fab fa-behance"></i>
         </div>
       
-        
+    <!--Carousel Wrapper-->
+<div id="video-carousel-example" class="carousel slide carousel-fade" data-ride="carousel" width="100%">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#video-carousel-example" data-slide-to="1"></li>
+    <li data-target="#video-carousel-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="res/Carthage Grains usine Jbel Ouest. Trituration des graines oléagineuses.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="res/Laboratoire Carthage Grains trituration d'oléagineuses. Tunisie Afrique..mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video class="video-fluid" autoplay loop muted>
+        <source src="res/Processus de trituration Carthage Grains Tunisie.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->     
   
   
   <div class="intro">
   <p>Bonjour. Souhaitez-vous visiter le <a href="http://www.carthagegrains.com" target="_blunk">Site officiel</a> </p>
 
-  <button onclick='son.paused ? son.play() : son.pause()' class="button">Play/Pause son</button>
-  <button onclick= 'vid.paused ? vid.play() : vid.pause()'class="button">Play/Pause video</button><br>
+  
+  
 
   <audio  id="son" autoplay loop >
       <source src="http://k002.kiwi6.com/hotlink/7c4qlni3c4/Snowfall.mp3"  type="audio/mp3">
   
     </audio>
-<div class="vid">
-    <video autoplay loop width="600"  id="vid" class=".animated.bounce"> 
-     <source src="res/Carthage Grains usine Jbel Ouest. Trituration des graines oléagineuses.mp4" type="video/mp4">
-     
-    </video>
-    <video autoplay loop width="600"  id="vid2"> 
-        
-         <source src="res/Laboratoire Carthage Grains trituration d'oléagineuses. Tunisie Afrique..mp4" type="video/mp4">
-       </video>
-      </div>
-    
+
 </div>
 
-  <ul>
-    <h1> liste des projets</h1>
-    <li> <a href="Tank13.html">Tank N°13</a></li>
-    <LI> <a href="P_2emesilo.html">Silo de graine</a></LI>
-  </ul>
-
+ 
 </div>
   <script type="text" src="js/mains.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -105,6 +130,16 @@
     crossorigin="anonymous"></script>
 
   <script>
+$('.carousel').carousel({
+interval: 2000
+})
+
+function resume(son) {
+    var player = document.querySelector('#' + son);
+	
+    player.currentTime = 10;
+    player.pause();
+}
 
 
 
