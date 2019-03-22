@@ -1,10 +1,13 @@
+
+
 .navbar{
+    
+    
     position: absolute;
 }
 
 #cover{
-    
-    background-repeat: inherit;
+   
    
 
     
@@ -88,7 +91,8 @@ a :hover{
 .carousel-fade{
     margin-left: 200px;
     width: 70%;
-    height:auto;
+    position: relative;
+    
     
     margin-top: 0px;
     
@@ -143,4 +147,21 @@ a :hover{
     color: beige;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+}
+.description{
+    margin-top: 50px;
+}
+p{
+    text-align: justify;
+    
+}
+article.col-lg-6{
+    line-height: 20px;
+    border: #4CAF50 solid;
+    border-image: 3px;
+}
+img{
+    border: #000000 solid;
+    padding-top: 2px;
+    padding-left: 90px;
 }
