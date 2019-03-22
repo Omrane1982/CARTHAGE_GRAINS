@@ -3,7 +3,7 @@
 .navbar{
     
     
-    position: absolute;
+    ;
 }
 
 #cover{
@@ -75,12 +75,12 @@ th {
 
 
 a:hover {
-    color: #FFFFFF;
+    color: chartreuse;
     text-decoration: underline;
 }
 
 a:active {
-    color: #FFFFFF;
+    color:#FFFFFF;
     text-decoration: none;
 }
 a :hover{
@@ -164,4 +164,39 @@ img{
     border: #000000 solid;
     padding-top: 2px;
     padding-left: 90px;
+}
+td /* Toutes les cellules des tableaux... */
+{
+border: 0px solid black; /* auront une bordure de 1px */
+}
+table
+
+{
+    
+    width: 90%;
+   margin-left: 100px;
+    margin-top: 6px;
+border-collapse: collapse; /* Les bordures du tableau seront
+collées (plus joli) */
+}
+.presentation{
+    color: #000000;
+    font-size: 12px;
+    text-align: justify;
+}
+p:hover {
+    outline: 2px solid #4CAF50;
+    transition: all .3s;
+    outline-offset: 6px;
+    color: blue;
+}
+
+td{
+    padding: 10px;
+    
+}
+#adr{
+    color:blueviolet;
+    font-size: 11px;
+    text-align: justify;
 }
