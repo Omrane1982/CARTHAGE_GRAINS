@@ -1,0 +1,26 @@
+h2,h3{
+    color: #4CAF50;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    width: 80%;
+}
+.figdes{
+    text-align: justify;
+    width: 80%;
+
+}
+.figure{
+    margin-top: 30px;
+}
+p:hover {
+    outline: 2px solid #4CAF50;
+    transition: all .3s;
+    outline-offset: 6px;
+    color: red;
+    font-size: 20px;
+    
+}
+nav{
+    position: absolute;
+    
+}
