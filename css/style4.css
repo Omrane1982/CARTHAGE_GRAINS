@@ -24,3 +24,10 @@ nav{
     position: absolute;
     
 }
+.videxp{
+    width: 300px;
+    height: 200px;
+}
+figcaption{
+    color: black;
+}
