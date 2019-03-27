@@ -183,8 +183,18 @@ td{
     text-align: justify;
 }
 
-@media screen and (max-width:1100px){
-    .carousel-inner{
-        width: 50%;
+@media screen and (max-width:500px){
+
+    video{
+        width: 400px;
+
     }
+}
+
+@media screen and (max-width:500px){
+    .carousel-fade{
+        margin-left: 40px !important;
+    
+    
+            }
 }
