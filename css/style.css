@@ -198,3 +198,18 @@ td{
     
             }
 }
+@media screen and (max-width:1000px){
+
+    video{
+        width: 700px;
+
+    }
+}
+
+@media screen and (max-width:1000px){
+    .carousel-fade{
+        margin-left: 40px !important;
+    
+    
+            }
+}
