@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        #contactForm{
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+        <!-- <div class="alert" id="alert">Your message has been sent</div> -->
+    <form id="contactForm" class="p-3 mb-2 bg-primary text-white" >
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" />
+
+            <label for="prenom">Quel est votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" />
+
+            <label for="email">Quel est votre e-mail ?</label>
+            <input type="email" name="email" id="email" />
+        </fieldset>
+        <fieldset>
+            <legend>Votre commentaire</legend> 
+            <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+                       </fieldset>
+         <fieldset>
+             <input type="submit" value="Envoyer" onclick="submitForm(event)">
+         </fieldset>  
+
+         </form>
+         <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyALZT_P8za_BxZdJwZ4JMBlSVnthkVH-2Q",
+    authDomain: "omrane-app.firebaseapp.com",
+    databaseURL: "https://omrane-app.firebaseio.com",
+    projectId: "omrane-app",
+    storageBucket: "omrane-app.appspot.com",
+    messagingSenderId: "709194376140"
+  };
+  firebase.initializeApp(config);
+         </script>
+         <script src="contact.js"></script>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
